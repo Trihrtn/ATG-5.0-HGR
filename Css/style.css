@@ -1,0 +1,465 @@
+:root {
+  --y-color: #f5b706;
+  --w-color: #fff;
+  --b-color: #050417;
+  --bg-color: #8042fe;
+}
+body {
+  font-family: 'Sora', sans-serif;
+  background-color: var(--b-color);
+}
+
+/*navbar*/
+nav {
+  z-index: 10;
+  background-color: transparent;
+  transition: 0.3s;
+  color: whitesmoke;
+}
+.navbar h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar h1 span {
+  color: var(--y-color);
+}
+.navbar h2 {
+  font-size: 24px;
+  margin: 0px 5px;
+  color: var(--y-color);
+}
+.navbar-nav {
+  font-size: 18px;
+}
+.navbar-nav a {
+  font-weight: 00;
+}
+
+.navbar .text-line {
+  display: flex;
+  align-items: center;
+}
+.navbar .text-line .line {
+  width: 22px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: var(--y-color);
+}
+
+/*Hero*/
+#hero {
+  padding: 150px 0px;
+  position: relative;
+  z-index: 1;
+}
+#hero h1 {
+  color: white;
+  font-size: 64px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#hero h2 {
+  font-weight: bold;
+  font-size: 64px;
+  color: var(--y-color);
+  margin-bottom: 30px;
+}
+#hero p {
+  color: white;
+  margin-bottom: 30px;
+  /* width: 75%; */
+  font-size: 24px;
+}
+#hero .btn {
+  position: relative;
+  background-color: var(--y-color);
+  width: 100%;
+  z-index: 4;
+  font-weight: 600;
+  height: 60px;
+  border: none;
+  margin: 10px 0px;
+}
+#hero .btn:hover {
+  opacity: 0.5;
+  transition: 1s;
+}
+#hero .btn a {
+  text-decoration: none;
+  color: var(--b-color);
+}
+#hero .grapic {
+  position: absolute;
+  background-color: whitesmoke;
+  border-radius: 100px 10px;
+  opacity: 0.1;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 130vh;
+  /* z-index: 1; */
+}
+@media (max-width: 768px) {
+  #hero {
+    padding: 60px 0px;
+    text-align: center;
+  }
+  #hero h1 {
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  #hero h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  #hero p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+#tutor {
+  position: relative;
+  background-color: white;
+  border-radius: 10px 80px;
+  padding: 100px 0px;
+  z-index: 10;
+  color: #050417;
+}
+#tutor video {
+  width: 100%;
+  border-radius: 10px;
+  border: 3px solid lightgray;
+}
+#tutor h1 {
+  font-size: 34px;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#tutor p {
+  font-size: 24px;
+  font-weight: 200;
+  margin-left: 20px;
+}
+@media (max-width: 768px) {
+  #tutor {
+    border-radius: 10px 40px;
+    padding: 20px 0px;
+    color: #050417;
+    text-align: center;
+  }
+  #tutor video {
+    width: 100%;
+    border-radius: 20px;
+  }
+  #tutor h1 {
+    font-size: 24px;
+    margin-left: 0;
+  }
+  #tutor p {
+    font-size: 16px;
+    margin-left: 0;
+  }
+}
+#tabel h1 {
+  font-size: 64px;
+  color: white;
+}
+#tabel img {
+  width: 100%;
+}
+
+/*Kenal*/
+#kenal {
+  background-color: white;
+  border-radius: 80px 10px;
+}
+#kenal h1 {
+  font-size: 48px;
+  color: var(--b-color);
+  font-weight: 700;
+}
+#kenal h1 span {
+  color: #f5b706;
+}
+#kenal p {
+  font-size: 26px;
+  font-weight: 500;
+  color: var(--b-color);
+}
+#kenal li {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--b-color);
+  margin: 10px 0px;
+}
+@media (max-width: 768px) {
+  #tabel h1 {
+    font-size: 36px;
+  }
+  #kenal h1 {
+    font-size: 24px;
+  }
+  #kenal p {
+    font-size: 18px;
+  }
+  #kenal ul {
+    font-size: 16px;
+  }
+}
+
+/*Keunggulan*/
+#keunggulan {
+  padding: 50px 0px;
+}
+#keunggulan h1 {
+  font-size: 64px;
+  color: var(--y-color);
+}
+@media (max-width: 768px) {
+  #keunggulan h1 {
+    font-size: 36px;
+  }
+}
+#keunggulan .keunggulan-satu {
+  background-color: var(--y-color);
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  /* height: 230px; */
+  margin-top: 20px;
+  border-radius: 5px;
+}
+@media (min-width: 770px) {
+  #keunggulan .keunggulan-satu {
+    height: 210px;
+  }
+}
+@media (min-width: 992px) {
+  #keunggulan .keunggulan-satu {
+    height: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  #keunggulan .keunggulan-satu {
+    height: 210px;
+  }
+}
+
+#keunggulan h2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+#keunggulan p {
+  font-size: 16px;
+}
+#keunggulan .keunggulan-dua {
+  background-color: var(--y-color);
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+@media (min-width: 992px) {
+  #keunggulan .keunggulan-dua {
+    height: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  #keunggulan .keunggulan-dua {
+    height: 220px;
+  }
+}
+/*Testimoni*/
+#testimoni {
+  background-color: white;
+  padding: 40px 0px;
+  border-radius: 10px 80px;
+}
+.card {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  background-color: white;
+}
+.card-layanan {
+  width: 100%;
+  position: relative;
+  background-color: white;
+  margin: 20px 0px;
+  text-align: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 40px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.5);
+}
+.card-layanan h2 {
+  font-size: 24px;
+  font-weight: 900;
+}
+.card-layanan p {
+  font-size: 18px;
+}
+.card-layanan:hover {
+  background-color: var(--b-color);
+  color: white;
+  transition: all 0.5s ease-in;
+  box-shadow: 0 0 7px 3px rgba(228, 225, 225, 0.5);
+}
+.card-layanan h2:hover {
+  transition: all 0.5s ease-in;
+}
+.card-layanan p:hover {
+  transition: all 0.2s ease-in;
+}
+
+/*Kerugian*/
+
+#kerugian h1 {
+  font-size: 48px;
+  color: var(--y-color);
+  font-weight: 900;
+}
+#kerugian li {
+  font-size: 20px;
+  font-weight: 200;
+  margin: 10px 0px;
+  color: white;
+}
+#kerugian .segera {
+  background-color: var(--y-color);
+  text-align: center;
+  width: 100%;
+  padding: 20px 10px;
+  border-radius: 5px;
+}
+#kerugian button {
+  background-color: var(--b-color);
+  border: none;
+  margin-top: 20px;
+  padding: 14px 40px;
+  border-radius: 10px;
+}
+#kerugian button:hover {
+  background-color: #003b83;
+}
+#kerugian button a {
+  text-decoration: none;
+  color: white;
+}
+
+#harga {
+  background-color: white;
+}
+#harga h1 {
+  font-size: 36px;
+  font-weight: 900;
+}
+#harga h2 {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+#harga h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+#harga h4 {
+  font-size: 18px;
+  color: #da1c3f;
+  font-weight: 900;
+  margin-top: 30px;
+}
+#harga .lot {
+  font-size: 18px;
+  font-weight: 900;
+}
+#harga h5 {
+  font-size: 24px;
+  font-weight: 900;
+  margin-top: 20px;
+}
+#harga h6 {
+  color: #da1c3f;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+#harga .level {
+  width: 100%;
+  margin: 20px 0px;
+  padding: 20px;
+  background-color: whitesmoke;
+  text-align: center;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.5);
+}
+#harga .btn {
+  background-color: var(--y-color);
+  width: 100%;
+  font-weight: 600;
+  height: 40px;
+  margin: 10px 0px;
+}
+#harga .btn:hover {
+  opacity: 0.5;
+  transition: 1s;
+}
+#harga .btn a {
+  text-decoration: none;
+  color: var(--b-color);
+}
+#harga .logo-bank {
+  width: 100%;
+  opacity: 0.5;
+}
+footer {
+  background-color: #000c1b;
+}
+footer h1 {
+  font-size: 24px;
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+footer .number a {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: 200;
+}
+footer .number a:hover {
+  font-weight: 900;
+  transition: 1s color;
+  color: var(--y-color);
+}
+footer p {
+  /* font-size: 20px; */
+  color: whitesmoke;
+  font-weight: 200;
+}
+footer .logo {
+  width: 40px;
+}
+footer ion-icon {
+  color: whitesmoke;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+@media (max-width: 500px) {
+  footer ion-icon {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 5px;
+  }
+  footer .number a {
+    font-size: 18px;
+  }
+}

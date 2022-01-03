@@ -1,0 +1,259 @@
+:root {
+  --y-color: #f5b706;
+  --w-color: #fff;
+  --b-color: #050417;
+  --bg-color: #8042fe;
+}
+body {
+  font-family: 'Sora', sans-serif;
+  background-color: var(--b-color);
+}
+
+/*navbar*/
+nav {
+  z-index: 10;
+  /* background-color: var(--b-color); */
+  transition: 0.3s;
+  color: var(--w-color);
+}
+.navbar h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar h1 span {
+  color: var(--y-color);
+}
+.navbar h2 {
+  font-size: 24px;
+  margin: 0px 5px;
+  color: var(--y-color);
+}
+.navbar-nav {
+  font-size: 18px;
+}
+.navbar-nav a {
+  font-weight: 00;
+}
+
+.navbar .text-line {
+  display: flex;
+  align-items: center;
+}
+.navbar .text-line .line {
+  width: 22px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: var(--y-color);
+}
+
+#registrasi img {
+  margin-top: 40px;
+  width: 90%;
+}
+#registrasi h1 {
+  font-weight: 48px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+}
+#registrasi h1 .yellow {
+  color: var(--y-color);
+}
+#registrasi .persyaratan {
+  margin: 40px 0px;
+}
+#registrasi h2 {
+  color: white;
+}
+#registrasi .persyaratan li {
+  color: white;
+  font-weight: 200;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+/* Tutor */
+/* #tutor {
+  /* height: 100vh; */
+
+#tutor .kiri {
+  border-radius: 10px;
+  text-align: left;
+}
+
+#tutor .pilihan {
+  margin-bottom: 10px;
+  background-color: white;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 20px;
+}
+#tutor .pilihan .link {
+  color: blue;
+}
+
+#tutor h3 {
+  font-size: 24px;
+  font-weight: 500;
+}
+#tutor a {
+  text-decoration: none;
+  /* position: relative; */
+  color: #000;
+  width: 100%;
+  font-size: 16px;
+}
+#tutor .kanan {
+  background-color: var(--w-color);
+  border-radius: 10px;
+  /* width: 100%; */
+  /* text-align: center; */
+  height: 800px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.5);
+  overflow: auto;
+  scroll-behavior: smooth;
+  /* color: --; */
+}
+#tutor .kanan p {
+  font-weight: 500;
+  margin-top: 20px;
+  font-size: 16px;
+  /* color: #fff; */
+}
+#tutor .kanan ul {
+  display: inline-block;
+}
+#tutor .kanan ul li {
+  text-align: left;
+}
+#tutor .kanan .link {
+  color: blue;
+}
+#tutor .kanan h1 {
+  font-size: 36px;
+}
+#tutor .kanan #pertama {
+  padding: 20px;
+}
+#tutor .kanan #kedua {
+  background-color: #e6e6e6;
+  padding: 20px;
+}
+#tutor .kanan #ketiga {
+  padding: 20px;
+}
+#tutor .kanan #keempat {
+  background-color: #e6e6e6;
+  padding: 20px;
+}
+#tutor .kanan #kelima {
+  padding: 20px;
+}
+#tutor .kanan #keenam {
+  background-color: #e6e6e6;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  #tutor .kanan h1 {
+    font-size: 18px;
+  }
+  #tutor a {
+    font-size: 14px;
+  }
+  #tutor .kanan img {
+    width: 50%;
+  }
+  #tutor .kanan ul {
+    margin: 10px 0px;
+  }
+  #tutor .kanan ul li {
+    text-align: left;
+    margin: 10px;
+  }
+}
+@media (max-width: 400px) {
+  #tutor h3 {
+    font-size: 16px;
+  }
+  #tutor .kanan img {
+    width: 100%;
+  }
+  #tutor .kanan ul {
+    margin: 10px 0px;
+  }
+  #tutor .kanan ul li {
+    text-align: left;
+    margin: 10px;
+  }
+  #tutor .kanan p {
+    font-size: 14px;
+  }
+}
+
+#tutor .kanan .red {
+  color: #ef0b0b;
+}
+/* footer */
+footer {
+  background-color: #000c1b;
+}
+footer h1 {
+  font-size: 24px;
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+footer .number a {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: 200;
+}
+footer .number a:hover {
+  font-weight: 900;
+  transition: 1s color;
+  color: var(--y-color);
+}
+footer p {
+  /* font-size: 20px; */
+  color: whitesmoke;
+  font-weight: 200;
+}
+footer .logo {
+  width: 40px;
+}
+footer ion-icon {
+  color: whitesmoke;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+@media (max-width: 500px) {
+  footer ion-icon {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 5px;
+  }
+  footer .number a {
+    font-size: 18px;
+  }
+}
+
+.go-top {
+  position: absolute;
+  right: 20px;
+  bottom: -1500px;
+  font-weight: bold;
+  display: none;
+  scroll-behavior: smooth;
+  color: var(--y-color);
+  font-size: 50px;
+  z-index: 2;
+}
+@media (max-width: 500px) {
+  .go-top {
+    display: block;
+  }
+}

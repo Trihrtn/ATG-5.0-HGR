@@ -1,0 +1,174 @@
+:root {
+  --y-color: #f5b706;
+  --w-color: #fff;
+  --b-color: #050417;
+  --bg-color: #8042fe;
+}
+body {
+  font-family: 'Sora', sans-serif;
+  background-color: var(--b-color);
+}
+
+nav {
+  z-index: 10;
+  background-color: var(--b-color);
+  transition: 0.3s;
+  color: var(--w-color);
+}
+.navbar h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar h1 span {
+  color: var(--y-color);
+}
+.navbar h2 {
+  font-size: 24px;
+  margin: 0px 5px;
+  color: var(--y-color);
+}
+.navbar-nav {
+  font-size: 18px;
+}
+
+.navbar .text-line {
+  display: flex;
+  align-items: center;
+}
+.navbar .text-line .line {
+  width: 22px;
+  height: 2px;
+  margin-bottom: 5px;
+  background-color: var(--y-color);
+}
+section h1 {
+  color: #ffffff;
+  font-size: 36px;
+}
+section h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 200;
+  margin: 20px 0px;
+}
+section h3 {
+  color: white;
+  font-size: 24px;
+}
+section h4 {
+  color: var(--y-color);
+  font-size: 26px;
+}
+section p {
+  color: var(--w-color);
+  font-weight: 200;
+  margin: 20px 0px;
+  font-size: 22px;
+}
+section img {
+  width: 100%;
+}
+section h5 {
+  color: #ef0b0b;
+}
+section h6 {
+  color: #ef0b0b;
+  font-size: 48px;
+}
+section .red {
+  color: #ef0b0b;
+}
+section .green {
+  color: #00bc35;
+}
+section .yellow {
+  color: var(--y-color);
+}
+section button {
+  border: none;
+  margin: 20px 0px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--y-color);
+  font-weight: 900;
+  font-size: 24px;
+}
+
+@media (max-width: 1000px) {
+  section h4 {
+    font-size: 20px;
+  }
+  section p {
+    font-size: 16px;
+    margin: 10px 0px;
+  }
+}
+@media (max-width: 768px) {
+  section h1 {
+    font-size: 24px;
+  }
+  section h2 {
+    font-size: 18px;
+    margin: 20px 0px;
+  }
+  section h3 {
+    font-size: 18px;
+  }
+  section h4 {
+    padding-top: 20px;
+  }
+  section h5 {
+    font-size: 14px;
+  }
+  section h6 {
+    font-size: 24px;
+  }
+}
+section .keterangan {
+  text-align: left;
+}
+footer {
+  background-color: #000c1b;
+}
+footer h1 {
+  font-size: 24px;
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+footer .number a {
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: 200;
+}
+footer .number a:hover {
+  font-weight: 900;
+  transition: 1s color;
+  color: var(--y-color);
+}
+footer p {
+  /* font-size: 20px; */
+  color: whitesmoke;
+  font-weight: 200;
+}
+footer .logo {
+  width: 40px;
+}
+footer ion-icon {
+  color: whitesmoke;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+@media (max-width: 500px) {
+  footer ion-icon {
+    width: 18px;
+    height: 18px;
+    margin-bottom: 5px;
+  }
+  footer .number a {
+    font-size: 18px;
+  }
+}
