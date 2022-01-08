@@ -76,6 +76,7 @@ nav {
 }
 
 #tutor .pilihan {
+  position: relative;
   margin-bottom: 10px;
   width: 100%;
   background-color: white;
@@ -83,12 +84,22 @@ nav {
   border-radius: 5px;
   padding: 20px;
 }
+#tutor .pilihan .icon {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  color: var(--b-color);
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
 #tutor .pilihan .link {
   color: blue;
+  font-size: 14px;
 }
 
 #tutor h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
 }
 #tutor a {
@@ -104,6 +115,7 @@ nav {
   overflow: auto;
   scroll-behavior: smooth;
 }
+
 #tutor .kanan p {
   font-weight: 500;
   margin-top: 20px;
@@ -121,8 +133,13 @@ nav {
 #tutor .kanan h1 {
   font-size: 36px;
 }
+#tutor .kanan h2 {
+  font-size: 28px;
+  margin: 10px 0px;
+}
 #tutor .kanan #pertama {
   padding: 20px;
+  transition: 1s;
 }
 #tutor .kanan #kedua {
   background-color: #e6e6e6;
@@ -130,6 +147,7 @@ nav {
 }
 #tutor .kanan #ketiga {
   padding: 20px;
+  /* transition: 1s; */
 }
 #tutor .kanan #keempat {
   background-color: #e6e6e6;
@@ -186,51 +204,43 @@ nav {
 /* footer */
 footer {
   background-color: #000c1b;
-  position: relative;
 }
 footer h1 {
   font-size: 24px;
   color: whitesmoke;
   margin-bottom: 20px;
 }
-footer .number a {
-  font-size: 20px;
-  margin-left: 10px;
-  margin-top: 10px;
+
+footer a {
+  font-size: 16px;
   color: whitesmoke;
   text-decoration: none;
   font-weight: 200;
 }
-footer .number a:hover {
+footer a:hover {
   font-weight: 900;
   transition: 1s color;
   color: var(--y-color);
 }
+footer .contact {
+  margin: 5px;
+  width: 100%;
+}
 footer p {
-  /* font-size: 20px; */
   color: whitesmoke;
   font-weight: 200;
 }
-footer .logo {
-  width: 40px;
-}
 footer ion-icon {
   color: whitesmoke;
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-}
-@media (max-width: 500px) {
-  footer ion-icon {
-    width: 18px;
-    height: 18px;
-    margin-bottom: 5px;
-  }
-  footer .number a {
-    font-size: 18px;
-  }
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
 
+footer .yellow {
+  color: var(--y-color);
+  text-decoration: none;
+}
 .go-top {
   position: absolute;
   right: 20px;
@@ -242,7 +252,7 @@ footer ion-icon {
   font-size: 50px;
   z-index: 2;
 }
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .go-top {
     display: block;
   }

@@ -11,9 +11,9 @@ body {
 
 /*navbar*/
 nav {
-  z-index: 10;
+  z-index: 100;
   background-color: transparent;
-  transition: 0.3s;
+  transition: 1s;
   color: whitesmoke;
 }
 .navbar h1 {
@@ -32,7 +32,12 @@ nav {
   font-size: 18px;
 }
 .navbar-nav a {
-  font-weight: 00;
+  color: white;
+}
+.navbar-nav a:hover {
+  color: var(--y-color);
+  opacity: 0.5;
+  transition: 0.5s;
 }
 
 .navbar .text-line {
@@ -67,7 +72,6 @@ nav {
 #hero p {
   color: white;
   margin-bottom: 30px;
-  /* width: 75%; */
   font-size: 24px;
 }
 #hero .btn {
@@ -97,7 +101,6 @@ nav {
   right: 0;
   width: 100%;
   height: 130vh;
-  /* z-index: 1; */
 }
 @media (max-width: 768px) {
   #hero {
@@ -125,7 +128,7 @@ nav {
   background-color: white;
   border-radius: 10px 80px;
   padding: 100px 0px;
-  z-index: 10;
+  z-index: 5;
   color: #050417;
 }
 #tutor video {
@@ -165,11 +168,14 @@ nav {
   }
 }
 #tabel h1 {
-  font-size: 64px;
+  font-size: 48px;
   color: white;
 }
 #tabel img {
   width: 100%;
+}
+#tabel span {
+  color: var(--y-color);
 }
 
 /*Kenal*/
@@ -198,16 +204,16 @@ nav {
 }
 @media (max-width: 768px) {
   #tabel h1 {
-    font-size: 36px;
+    font-size: 24px;
   }
   #kenal h1 {
     font-size: 24px;
   }
   #kenal p {
-    font-size: 18px;
-  }
-  #kenal ul {
     font-size: 16px;
+  }
+  #kenal li {
+    font-size: 14px;
   }
 }
 
@@ -217,11 +223,12 @@ nav {
 }
 #keunggulan h1 {
   font-size: 64px;
+  font-weight: bold;
   color: var(--y-color);
 }
 @media (max-width: 768px) {
   #keunggulan h1 {
-    font-size: 36px;
+    font-size: 24px;
   }
 }
 #keunggulan .keunggulan-satu {
@@ -229,24 +236,9 @@ nav {
   text-align: center;
   width: 100%;
   padding: 20px;
-  /* height: 230px; */
+  height: 90%;
   margin-top: 20px;
   border-radius: 5px;
-}
-@media (min-width: 770px) {
-  #keunggulan .keunggulan-satu {
-    height: 210px;
-  }
-}
-@media (min-width: 992px) {
-  #keunggulan .keunggulan-satu {
-    height: 300px;
-  }
-}
-@media (min-width: 1200px) {
-  #keunggulan .keunggulan-satu {
-    height: 210px;
-  }
 }
 
 #keunggulan h2 {
@@ -260,18 +252,17 @@ nav {
   background-color: var(--y-color);
   text-align: center;
   width: 100%;
+  height: 90%;
   padding: 20px;
   margin-top: 20px;
   border-radius: 5px;
 }
-@media (min-width: 992px) {
-  #keunggulan .keunggulan-dua {
-    height: 300px;
+@media (max-width: 768px) {
+  #keunggulan h2 {
+    font-size: 16px;
   }
-}
-@media (min-width: 1200px) {
-  #keunggulan .keunggulan-dua {
-    height: 220px;
+  #keunggulan p {
+    font-size: 14px;
   }
 }
 /*Testimoni*/
@@ -292,6 +283,7 @@ nav {
   position: relative;
   background-color: white;
   margin: 20px 0px;
+  height: 90%;
   text-align: center;
   align-items: center;
   border-radius: 5px;
@@ -316,6 +308,18 @@ nav {
 }
 .card-layanan p:hover {
   transition: all 0.2s ease-in;
+}
+@media (max-width: 768px) {
+  .card-layanan {
+    margin: 10px 0px;
+    padding: 20px;
+  }
+  .card-layanan h2 {
+    font-size: 18px;
+  }
+  .card-layanan p {
+    font-size: 14px;
+  }
 }
 
 /*Kerugian*/
@@ -352,26 +356,42 @@ nav {
   text-decoration: none;
   color: white;
 }
-
+@media (max-width: 768px) {
+  #kerugian h1 {
+    font-size: 24px;
+  }
+  #kerugian li {
+    font-size: 16px;
+  }
+  #kerugian h2 {
+    font-size: 20px;
+  }
+  #kerugian button a {
+    font-size: 14px;
+  }
+}
 #harga {
   background-color: white;
+}
+#harga span {
+  color: var(--y-color);
 }
 #harga h1 {
   font-size: 36px;
   font-weight: 900;
 }
 #harga h2 {
-  font-size: 18px;
+  font-size: 16px;
   margin-top: 10px;
   font-weight: 600;
 }
 #harga h3 {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   margin-top: 10px;
 }
 #harga h4 {
-  font-size: 18px;
+  font-size: 15px;
   color: #da1c3f;
   font-weight: 900;
   margin-top: 30px;
@@ -390,9 +410,32 @@ nav {
   font-weight: 900;
   font-size: 18px;
 }
-
+@media (max-width: 768px) {
+  #harga h1 {
+    font-size: 24px;
+  }
+  #harga h2 {
+    font-size: 18px;
+  }
+  #harga h3 {
+    font-size: 14px;
+  }
+  #harga h4 {
+    font-size: 14px;
+  }
+  #harga .lot {
+    font-size: 14px;
+  }
+  #harga h5 {
+    font-size: 20px;
+  }
+  #harga h6 {
+    font-size: 14px;
+  }
+}
 #harga .level {
   width: 100%;
+  height: 90%;
   margin: 20px 0px;
   padding: 20px;
   background-color: whitesmoke;
@@ -413,10 +456,10 @@ nav {
 #harga .btn a {
   text-decoration: none;
   color: var(--b-color);
+  font-size: 12px;
 }
 #harga .logo-bank {
   width: 100%;
-  opacity: 0.5;
 }
 footer {
   background-color: #000c1b;
@@ -426,40 +469,34 @@ footer h1 {
   color: whitesmoke;
   margin-bottom: 20px;
 }
-footer .number a {
-  font-size: 20px;
-  margin-left: 10px;
-  margin-top: 10px;
+
+footer a {
+  font-size: 16px;
   color: whitesmoke;
   text-decoration: none;
   font-weight: 200;
 }
-footer .number a:hover {
+footer a:hover {
   font-weight: 900;
   transition: 1s color;
   color: var(--y-color);
 }
+footer .contact {
+  margin: 5px;
+  width: 100%;
+}
 footer p {
-  /* font-size: 20px; */
   color: whitesmoke;
   font-weight: 200;
 }
-footer .logo {
-  width: 40px;
-}
 footer ion-icon {
   color: whitesmoke;
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
-@media (max-width: 500px) {
-  footer ion-icon {
-    width: 18px;
-    height: 18px;
-    margin-bottom: 5px;
-  }
-  footer .number a {
-    font-size: 18px;
-  }
+
+footer .yellow {
+  color: var(--y-color);
+  text-decoration: none;
 }

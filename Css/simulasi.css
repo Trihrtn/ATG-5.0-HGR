@@ -47,33 +47,38 @@ section h1 {
 }
 section h2 {
   color: #fff;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 200;
-  margin: 20px 0px;
+  margin: 10px 0px;
+}
+section .fix {
+  font-size: 24px;
 }
 section h3 {
   color: white;
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: 200;
 }
 section h4 {
   color: var(--y-color);
-  font-size: 26px;
+  font-size: 24px;
 }
 section p {
   color: var(--w-color);
   font-weight: 200;
   margin: 20px 0px;
-  font-size: 22px;
+  font-size: 18px;
 }
 section img {
   width: 100%;
 }
 section h5 {
   color: #ef0b0b;
+  font-size: 16px;
 }
 section h6 {
   color: #ef0b0b;
-  font-size: 48px;
+  font-size: 36px;
 }
 section .red {
   color: #ef0b0b;
@@ -105,27 +110,35 @@ section button {
 }
 @media (max-width: 768px) {
   section h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
   section h2 {
-    font-size: 18px;
-    margin: 20px 0px;
+    font-size: 16px;
   }
   section h3 {
-    font-size: 18px;
+    font-size: 16px;
   }
   section h4 {
     padding-top: 20px;
+    font-size: 18px;
   }
   section h5 {
-    font-size: 14px;
+    font-size: 16px;
   }
   section h6 {
     font-size: 24px;
   }
+  section .fix {
+    font-size: 20px;
+  }
 }
 section .keterangan {
   text-align: left;
+}
+@media (max-width: 768px) {
+  section .keterangan {
+    text-align: center;
+  }
 }
 footer {
   background-color: #000c1b;
@@ -135,40 +148,34 @@ footer h1 {
   color: whitesmoke;
   margin-bottom: 20px;
 }
-footer .number a {
-  font-size: 20px;
-  margin-left: 10px;
-  margin-top: 10px;
+
+footer a {
+  font-size: 16px;
   color: whitesmoke;
   text-decoration: none;
   font-weight: 200;
 }
-footer .number a:hover {
+footer a:hover {
   font-weight: 900;
   transition: 1s color;
   color: var(--y-color);
 }
+footer .contact {
+  margin: 5px;
+  width: 100%;
+}
 footer p {
-  /* font-size: 20px; */
   color: whitesmoke;
   font-weight: 200;
 }
-footer .logo {
-  width: 40px;
-}
 footer ion-icon {
   color: whitesmoke;
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
 }
-@media (max-width: 500px) {
-  footer ion-icon {
-    width: 18px;
-    height: 18px;
-    margin-bottom: 5px;
-  }
-  footer .number a {
-    font-size: 18px;
-  }
+
+footer .yellow {
+  color: var(--y-color);
+  text-decoration: none;
 }
